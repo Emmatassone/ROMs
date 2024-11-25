@@ -29,7 +29,7 @@ scaled_noise = gaussian_noise * max_value
 # Generar la señal observada
 observed_signal = hp_rom + scaled_noise
 
-# Generar una señal modelo
+# Generar una señal modelo - PONER MASAS IGUALES
 def generate_model_signal(mass1, mass2, approximant="SEOBNRv4_ROM"):
     hp, _ = get_td_waveform(
         approximant=approximant,
